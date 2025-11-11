@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Shop - Hasil Pemesanan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <header>
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h1>Umar Shop</h1>
+                </div>
+                <p class="tagline">Temukan produk elektronik yang anda cari</p>
+            </header>
+            
+            <div class="content">
+                <section class="result-section">
+                    <h2><i class="fas fa-check-circle"></i> Hasil Pemesanan</h2>
+                    
+                    <div class="result-container">
+                        <div class="success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Pesanan Berhasil Dikirim!</h3>
+                            <p>Terima kasih telah berbelanja di Umar shop. Pesanan Anda sedang diproses.</p>
+                        </div>
+                        
+                        <div class="order-details">
+                            <div class="detail-card">
+                                <h3><i class="fas fa-user"></i> Informasi Pelanggan</h3>
+                                <div class="detail-item">
+                                    <span class="detail-label">Nama:</span>
+                                    <span class="detail-value" id="resultName">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Email:</span>
+                                    <span class="detail-value" id="resultEmail">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Telepon:</span>
+                                    <span class="detail-value" id="resultPhone">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Jenis Kelamin:</span>
+                                    <span class="detail-value" id="resultGender">-</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h3><i class="fas fa-shipping-fast"></i> Pengiriman & Pembayaran</h3>
+                                <div class="detail-item">
+                                    <span class="detail-label">Alamat:</span>
+                                    <span class="detail-value" id="resultAddress">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Metode Bayar:</span>
+                                    <span class="detail-value" id="resultPayment">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Tanggal Pesan:</span>
+                                    <span class="detail-value" id="resultDate">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Status:</span>
+                                    <span class="detail-value" style="color: var(--success);">Diproses</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="products-summary">
+                            <h3><i class="fas fa-box-open"></i> Produk Dipesan</h3>
+                            <div id="productsList">
+                                <!-- Produk akan ditambahkan secara dinamis -->
+                            </div>
+                        </div>
+                        
+                        <div class="order-total">
+                            <h3><i class="fas fa-receipt"></i> Ringkasan Pembayaran</h3>
+                            <div class="total-item">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">Rp 0</span>
+                            </div>
+                            <div class="total-item">
+                                <span>Biaya Pengiriman:</span>
+                                <span>Rp 25.000</span>
+                            </div>
+                            <div class="total-item">
+                                <span>Diskon:</span>
+                                <span id="discountValue" style="color: var(--success);">- Rp 50.000</span>
+                            </div>
+                            <div class="total-final">
+                                <span>Total:</span>
+                                <span id="totalPrice">Rp 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button class="btn-secondary" onclick="printOrder()">
+                            <i class="fas fa-print"></i> Cetak Pesanan
+                        </button>
+                        <button class="btn-primary" onclick="newOrder()">
+                            <i class="fas fa-plus"></i><a href="praktikum.html">Pesan Baru</a></button>
+                    </div>
+                </section>
+            </div>   n
+            
+           
+
+    <script src="script.js"></script>
+</body>
+</html>

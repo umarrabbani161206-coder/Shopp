@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shop - Detail Pemesanan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <header>
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h1>Umar Shop</h1>
+                </div>
+                <p class="tagline">Temukan produk elektronik yang anda cari
+</p>
+            </header>
+            
+            <div class="content">
+                <section class="form-section">
+                    <h2><i class="fas fa-edit"></i> Detail Pemesanan</h2>
+                    
+                    <form id="orderForm" action="praktikumm.html" method="GET">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-venus-mars"></i> Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                                    <label for="male">Laki-laki</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="female" name="gender" value="Perempuan">
+                                    <label for="female">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address"><i class="fas fa-home"></i> Alamat Lengkap</label>
+                            <textarea id="address" name="address" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-box"></i> Pilih Produk</label>
+                            <div class="products-grid">
+                                <div class="product-card" data-product="Laptop Gaming" data-price="12500000" data-image="laptop.jpg">
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=300&fit=crop" alt="Laptop Gaming">
+                                        <div class="product-overlay">
+                                            <i class="fas fa-laptop"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-name">Laptop Gaming</div>
+                                    <div class="product-price">Rp 12.500.000</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span>(128)</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card" data-product="Smartphone" data-price="2500000" data-image="smartphone.jpg">
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop" alt="Smartphone">
+                                        <div class="product-overlay">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-name">Smartphone</div>
+                                    <div class="product-price">Rp 2.500.000</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(95)</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card" data-product="Headphone" data-price="400000" data-image="headphone.jpg">
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Headphone">
+                                        <div class="product-overlay">
+                                            <i class="fas fa-headphones"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-name">Headphone</div>
+                                    <div class="product-price">Rp 400.000</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>(204)</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card" data-product="Smartwatch" data-price="1800000" data-image="smartwatch.jpg">
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Smartwatch">
+                                        <div class="product-overlay">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-name">Smartwatch</div>
+                                    <div class="product-price">Rp 1.800.000</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span>(76)</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-card" data-product="Tablet" data-price="4000000" data-image="tablet.jpg">
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=300&fit=crop" alt="Tablet">
+                                        <div class="product-overlay">
+                                            <i class="fas fa-tablet-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-name">Tablet</div>
+                                    <div class="product-price">Rp 4.000.000</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(63)</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-card" data-product="Kamera" data-price="15500000" data-image="camera.jpg">
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=300&fit=crop" alt="Kamera">
+                                        <div class="product-overlay">
+                                            <i class="fas fa-camera"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-name">Kamera DSLR</div>
+                                    <div class="product-price">Rp 15.500.000</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span>(142)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="selectedProducts" name="products" value="">
+                            <input type="hidden" id="selectedProductImages" name="productImages" value="">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="payment"><i class="fas fa-credit-card"></i> Metode Pembayaran</label>
+                            <select id="payment" name="payment" required>
+                                <option value="" disabled selected>Pilih metode pembayaran</option>
+                                <option value="Transfer Bank">Transfer Bank</option>
+                                <option value="Gerai Terdekat"></option>
+                                <option value="Kartu Kredit">Kartu Kredit</option>
+                                <option value="E-Wallet">E-Wallet</option>
+                                <option value="COD">COD (Bayar di Tempat)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar"></i> Tanggal Pengiriman</label>
+                            <input type="date" id="deliveryDate" name="deliveryDate" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="agree" name="agree" required>
+                                <label for="agree">Saya menyetujui syarat dan ketentuan yang berlaku</label>
+                            </div>
+                        </div>
+                        
+                        <div class="button-group">
+                            <button type="reset" class="btn-secondary">
+                                <i class="fas fa-redo"></i> Reset Form
+                            </button>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i> Kirim Pesanan
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
